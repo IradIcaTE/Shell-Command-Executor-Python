@@ -5,6 +5,7 @@ def execute_commands(file_path):
         commands = file.readlines()
 
         print(commands)
+        print(commands.strip())
 
     for cmd in commands:
         print(f"Running: {cmd.strip()}")
