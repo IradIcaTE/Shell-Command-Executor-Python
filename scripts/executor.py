@@ -4,6 +4,8 @@ def execute_commands(file_path):
     with open(file_path, "r") as file:
         commands = file.readlines()
 
+        print(commands)
+
     for cmd in commands:
         print(f"Running: {cmd.strip()}")
         result = subprocess.run(cmd.strip(), shell=True, capture_output=True, text=True)
